@@ -1,4 +1,5 @@
 
+window.onload = function(){ 
 
 // Get the modal
 var modal = document.getElementById("myModal");
@@ -26,7 +27,7 @@ window.onclick = function(event) {
   }
 };
 
-window.onload = function(){ 
+  };
 
 window.smoothScroll = function(target) {
     var scrollContainer = target;
@@ -49,6 +50,6 @@ window.smoothScroll = function(target) {
     }
     // start scrolling
     scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
-};
+
   
 };

@@ -1,0 +1,62 @@
+    
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <link rel="stylesheet" type="text/css" href="upstate.css">
+  
+  <script src="upstate.js"></script>
+  
+</head>
+<body>
+    
+  <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxNWdIBRmVvdHScN94zMDeqJA3s-ReglUe0_ZrCTBCZSm5SR3c5/exec'
+  const form = document.forms['submit-to-google-sheet']
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+    
+  <div class="hero">
+    <img class="logo" src="https://i.imgur.com/SN2JZ64.png">
+    <h1 class="head">Web, branding & design for your business<h1>
+      
+      <button id="getstarted" onclick="" type="button">Get Started</button>
+      <p>
+      <input onclick="smoothScroll(document.getElementById('brand'))" id="learnmore" type=image src="https://i.imgur.com/n2yjZ60.png">
+             </p>
+  </div>
+  
+      
+           <div id="myModal" class="modal">
+        <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p class="conthead">Contact Us</p>
+    
+    <div class="container">
+        <main>
+
+        <form name="submit-to-google-sheet">
+      <input class="fields" type="email" placeholder="Email*" name="email" required>
+<p>
+      <input class="info" type="submit" value="Send">
+  </form>
+        
+        
+      </p>
+      </main>
+    </div>
+  </div>
+             </div>
+      
+  <div id="brand">
+    
+  </div>
+  
+</body>
+</html>

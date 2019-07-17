@@ -1,0 +1,65 @@
+<head>
+  
+  <link rel="stylesheet" type="text/css" href="upstate.css">
+  
+  <script src="upstate.js"></script>
+  
+  <script> 
+    
+    var $form = $('form#test-form'),
+    url = 'https://script.google.com/macros/s/AKfycbwTB5ctOgkj2TwFB6SAsI-2FUBmZZv-jxyAoB0TA9vv5KeXILsu/exec
+'
+
+$('#submit-form').on('click', function(e) {
+  e.preventDefault();
+  var jqxhr = $.ajax({
+    url: url,
+    method: "GET",
+    dataType: "json",
+    data: $form.serializeObject()
+  }).success(
+    // do something
+  );
+})
+    
+  </script>
+  
+  
+</head>
+<body>
+  <div class="hero">
+    <img class="logo" src="https://i.imgur.com/SN2JZ64.png">
+    <h1 class="head">Web, branding & design for your business<h1>
+      
+      <button id="getstarted" onclick="" type="button">Get Started</button>
+      <p>
+      <input onclick="smoothScroll(document.getElementById('brand'))" id="learnmore" type=image src="https://i.imgur.com/n2yjZ60.png">
+             </p>
+  </div>
+  
+      
+           <div id="myModal" class="modal">
+        <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p class="conthead">Contact Us</p>
+    
+    <div class="container">
+      <p>
+        <form>
+      <input class="fields" type="text" placeholder="Name*" name="name" required>
+      </p>
+      <input class="fields" type="text" placeholder="Email*" name="email" required>
+<p>
+      <button class="info" type="submit">Request Info</button>
+  </form>
+      </p>
+    </div>
+  </div>
+             </div>
+      
+  <div id="brand">
+    
+  </div>
+  
+</body>

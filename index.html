@@ -4,42 +4,7 @@
   
   <script src="upstate.js"></script>
   
-<script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
 
-<script src="//alertifyjs.com/build/alertify.js"></script>
-
-<link rel="stylesheet" href="//treehouse-code-samples.s3.amazonaws.com/poly/css/application.css"/>
-
-<link rel="stylesheet" href="//alertifyjs.com/build/css/alertify.css"/>
-  
-  <link rel="stylesheet" href="//alertifyjs.com/build/css/themes/default.css"/>
-  
-  <script>
-    
-    $('#contact-form').submit(function(e) {
-      var name = document.getElementById('inputName'),
-      email = document.getElementById('inputEmail');
-      
-      if (!name.value || !email.value) {
-        alertify.error('Please check your entries')
-      } else {
-        $.ajax({
-          url: "https://mailthis.to/normalgreetings@gmail.com",
-          method: "POST",
-          data: $(this).serialize(),
-          dataType: "json"
-        });
-        e.preventDefault()
-        $(this).get(0).reset()
-        alertify.success('Message sent')
-      }
-      
-    }
-                             
-                             )
-    
-  </script>
-  
 </head>
 <body>
   <div class="hero">

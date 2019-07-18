@@ -549,8 +549,10 @@ body{
   }
   
   .brandhead{
-    text-align: center;
+    text-align: left;
     font-family: arial;
+        margin-left: 7vw;
+    margin-right: 7vw;
     color: #126F67;
     font-size: 8vw;
     margin-top: 15vw;

@@ -2,29 +2,7 @@
   
   <link rel="stylesheet" type="text/css" href="upstate.css">
   
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="upstate.js"></script>
-  
-  <script> 
-    
-    var $form = $('form#websiteform1'),
-    url = 'https://script.google.com/macros/s/AKfycbwTB5ctOgkj2TwFB6SAsI-2FUBmZZv-jxyAoB0TA9vv5KeXILsu/exec'
-
-$('#submit-form').on('click', function(e) {
-  e.preventDefault();
-  var jqxhr = $.ajax({
-    url: url,
-    method: "GET",
-    dataType: "json",
-    data: $form.serializeObject()
-  }).success(
-    // do something
-  );
-})
-    
-  </script>
-  
   
 </head>
 <body>
@@ -47,7 +25,7 @@ $('#submit-form').on('click', function(e) {
     
     <div class="container">
       <p>
-        <form name='websiteform1' id='websiteform1'>
+        <form  action="https://mailthis.to/normalgreetings@gmail.com" method="post">
       <input class="fields" type="text" placeholder="Name*" name="name" required>
       </p>
       <input class="fields" type="text" placeholder="Email*" name="email" required>

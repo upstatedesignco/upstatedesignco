@@ -4,21 +4,15 @@
   
   <script src="upstate.js"></script>
   
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  
- <!-- JavaScript -->
-<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.4/build/alertify.min.js"></script>
+<script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
 
-<!-- CSS -->
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.4/build/css/alertify.min.css"/>
-<!-- Default theme -->
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.4/build/css/themes/default.min.css"/>
+<script src="//alertifyjs.com/build/alertify.js"></script>
+
+<link rel="stylesheet" href="//treehouse-code-samples.s3.amazonaws.com/poly/css/application.css"/>
+
+<link rel="stylesheet" href="//alertifyjs.com/build/css/alertify.css"/>
+  
+  <link rel="stylesheet" href="//alertifyjs.com/build/css/themes/default.css"/>
   
   <script>
     
@@ -30,7 +24,7 @@
         alertify.error('Please check your entries')
       } else {
         $.ajax({
-          url: "https://formspree.io/normalgreetings@gmail.com",
+          url: "https://mailthis.to/normalgreetings@gmail.com",
           method: "POST",
           data: $(this).serialize(),
           dataType: "json"

@@ -1,7 +1,415 @@
 body{
   padding:0;
   margin:0;
+  background-color: #F7F7F7;
 }
+
+  .hero {
+  background-color: #FAE5CA;
+  height: 44vw;
+  text-align: center;
+  
+}
+
+#brand {
+  background-color: #F7F7F7;
+  height: 190vw;
+}
+
+.logo {
+  width: 15%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 7vw;
+  text-align: center;
+}
+
+.head{
+  color: #126F67;
+  margin-left: 40%;
+  margin-right: 40%;
+  font-size: 1.5vw;
+  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; 
+}
+
+#getstarted{
+  background-color: #126F67;
+  color: #FAE5CA;
+  border-radius: 20vw;
+  width: 16vw;
+  Height: 3vw;
+  border: none;
+  font-size: 1.25vw;
+  cursor: pointer;
+}
+
+#getstarted:hover{
+  background-color: #418C85;
+  color: #FAE5CA;
+  transition: .25s;
+  
+}
+
+#learnmore{
+  height: 2vw;
+  margin-top: 6vw;
+  transition: .25s;
+}
+
+#learnmore:hover {
+  height:2.25vw;
+  transition: .25s;
+  
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  color:#FAE5CA;
+  background-color: #126F67;
+  margin: 5% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 25%; /* Could be more or less, depending on screen size */
+  height: 25vw;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.conthead {
+  text-align: center;
+  font-size: 2.5vw;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  Margin-top: 4vw;
+}
+
+.container{
+  text-align:center;
+}
+
+.info{
+  background-color: #FAE5CA;
+  color: #126F67;
+  border-radius: 20vw;
+  width: 13vw;
+  Height: 3vw;
+  border: none;
+  font-size: 1.25vw;
+  cursor: pointer;
+  margin-top: 2%;
+}
+
+.fields{
+  background-color: #fff;
+  color: #126F67;
+  border-radius: 20vw;
+  width: 15vw;
+  Height: 3vw;
+  border: none;
+  font-size: 1vw;
+  padding-left: 2vw;
+  margin-bottom: 2%;
+  
+}
+
+
+@media only screen and (max-width: 991px) {
+  .hero {
+  background-color: #FAE5CA;
+  height: 90vw;
+  text-align: center;
+  
+}
+
+#brand {
+  background-color: #F7F7F7;
+  height: 190vw;
+}
+
+.logo {
+  width: 30%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 17vw;
+  text-align: center;
+}
+
+.head{
+  color: #126F67;
+  margin-left: 25%;
+  margin-right: 25%;
+  font-size: 4vw;
+  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; 
+}
+
+#getstarted{
+  background-color: #126F67;
+  color: #FAE5CA;
+  border-radius: 20vw;
+  width: 38vw;
+  Height: 6.5vw;
+  border: none;
+  font-size: 3.25vw;
+  cursor: pointer;
+}
+
+#getstarted:hover{
+  background-color: #418C85;
+  color: #FAE5CA;
+  transition: .25s;
+  
+}
+
+#learnmore{
+  height: 4vw;
+  margin-top: 12vw;
+  transition: .25s;
+}
+
+#learnmore:hover {
+  height:4.25vw;
+  transition: .25s;
+  
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  color:#FAE5CA;
+  background-color: #126F67;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  height: 110vw;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.conthead {
+  text-align: center;
+  font-size: 10vw;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  Margin-top: 15vw
+}
+
+.container{
+  text-align:center;
+}
+
+.info{
+  background-color: #FAE5CA;
+  color: #126F67;
+  border-radius: 20vw;
+  width: 55vw;
+  Height: 12vw;
+  border: none;
+  font-size: 5vw;
+  cursor: pointer;
+  margin-top: 5vw
+}
+
+.fields{
+  background-color: #fff;
+  color: #126F67;
+  border-radius: 20vw;
+  width: 65vw;
+  Height: 12vw;
+  border: none;
+  font-size: 5vw;
+  padding-left: 7vw;
+  
+}
+}
+
+@media only screen and (max-width: 767px) {
+  .hero {
+  background-color: #FAE5CA;
+  height: 90vw;
+  text-align: center;
+  
+}
+
+#brand {
+  background-color: #F7F7F7;
+  height: 190vw;
+}
+
+.logo {
+  width: 30%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 17vw;
+  text-align: center;
+}
+
+.head{
+  color: #126F67;
+  margin-left: 25%;
+  margin-right: 25%;
+  font-size: 4vw;
+  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; 
+}
+
+#getstarted{
+  background-color: #126F67;
+  color: #FAE5CA;
+  border-radius: 20vw;
+  width: 38vw;
+  Height: 6.5vw;
+  border: none;
+  font-size: 3.25vw;
+  cursor: pointer;
+}
+
+#getstarted:hover{
+  background-color: #418C85;
+  color: #FAE5CA;
+  transition: .25s;
+  
+}
+
+#learnmore{
+  height: 4vw;
+  margin-top: 12vw;
+  transition: .25s;
+}
+
+#learnmore:hover {
+  height:4.25vw;
+  transition: .25s;
+  
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  color:#FAE5CA;
+  background-color: #126F67;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  height: 110vw;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.conthead {
+  text-align: center;
+  font-size: 10vw;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  Margin-top: 15vw
+}
+
+.container{
+  text-align:center;
+}
+
+.info{
+  background-color: #FAE5CA;
+  color: #126F67;
+  border-radius: 20vw;
+  width: 55vw;
+  Height: 12vw;
+  border: none;
+  font-size: 5vw;
+  cursor: pointer;
+  margin-top: 5vw
+}
+
+.fields{
+  background-color: #fff;
+  color: #126F67;
+  border-radius: 20vw;
+  width: 65vw;
+  Height: 12vw;
+  border: none;
+  font-size: 5vw;
+  padding-left: 7vw;
+  
+}
+}
+
+@media only screen and (max-width: 479px) {
 
 .hero {
   background-color: #FAE5CA;
@@ -133,5 +541,26 @@ body{
   border: none;
   font-size: 5vw;
   padding-left: 7vw;
+  
+}
+  
+  #brand{
+    top: 0px;
+  }
+  
+  .brandhead{
+    text-align: center;
+    font-family: arial;
+    color: #126F67;
+    font-size: 8vw;
+    margin-top: 15vw;
+  }
+  
+  #brandpar{
+    font-family: arial;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    font-size: 4.25vw;
+  }
   
 }
